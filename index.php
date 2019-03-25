@@ -462,6 +462,14 @@
     if ($answer20 == "B") { $totalCorrect++; }
     
     echo "<h1>" . "<div id='results'>$totalCorrect / 20 correct</div>" . "</h1>";
+
+    if($totalCorrect <10){
+       echo "<h1>" . "Try Again!" . "</h1>";
+    } else if($totalCorrect >=10 && $totalCorrect <15){
+        echo "<h1>" . "You scored average." . "</h1>";
+    } else{
+        echo "<h1>" . "You did well!" . "</h1>";
+    }
     
 ?>
 </body>
